@@ -1,0 +1,9 @@
+# Example backend configuration for Azure Storage
+# Copy this file to backend.hcl and fill in your values
+# DO NOT commit backend.hcl to version control
+
+resource_group_name  = "rg-haose-terraform-state"
+storage_account_name = "sthaoseterraform"  # Must be globally unique, lowercase, alphanumeric
+container_name       = "tfstate"
+key                  = "test.terraform.tfstate"
+
